@@ -21,10 +21,6 @@ function App() {
     }
   };
 
-  const colors = list.map((color, index) => {
-    return <SingleColor key={index} color={color} index={index} />;
-  });
-
   return (
     <>
       <section className="container">
@@ -42,7 +38,11 @@ function App() {
           </button>
         </form>
       </section>
-      <section className="colors">{colors}</section>
+      <section className="colors">
+        {list.map((color, index) => {
+          return <SingleColor key={index} color={color} index={index} />;
+        })}
+      </section>
     </>
   );
 }
