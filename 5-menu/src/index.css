@@ -180,7 +180,7 @@ Menu
 }
 .section-center {
   width: 90vw;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   max-width: 1170px;
   display: grid;
   gap: 3rem 2rem;
