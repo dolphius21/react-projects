@@ -3,7 +3,7 @@ import React from 'react';
 const Categories = ({ filterMenuItems, categories }) => {
   return (
     <div className="btn-container">
-      {categories[0].map((category, index) => {
+      {categories.map((category, index) => {
         return (
           <button
             className="filter-btn"
