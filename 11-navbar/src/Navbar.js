@@ -22,11 +22,17 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="Coding Addict" />
-          <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
+          <button
+            className="nav-toggle"
+            onClick={() => setShowLinks(!showLinks)}
+          >
             <FaBars />
           </button>
         </div>
-        <div className={`${showLinks && 'show-container'} links-container`} ref={linksContainerRef}>
+        <div
+          className={`${showLinks && 'show-container'} links-container`}
+          ref={linksContainerRef}
+        >
           <ul className="links" ref={linksRef}>
             {links.map((link) => {
               const { id, url, text } = link;
